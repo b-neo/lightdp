@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.3edb5635.chunk.css",
-    "main.js": "/static/js/main.d49962fa.chunk.js",
-    "main.js.map": "/static/js/main.d49962fa.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.06e07f2a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.06e07f2a.js.map",
-    "static/js/2.ce89fb94.chunk.js": "/static/js/2.ce89fb94.chunk.js",
-    "static/js/2.ce89fb94.chunk.js.map": "/static/js/2.ce89fb94.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.3edb5635.chunk.css.map": "/static/css/main.3edb5635.chunk.css.map",
-    "static/js/2.ce89fb94.chunk.js.LICENSE.txt": "/static/js/2.ce89fb94.chunk.js.LICENSE.txt",
-    "static/media/flash.a3f146a6.png": "/static/media/flash.a3f146a6.png",
-    "static/media/light.d9cbbf45.png": "/static/media/light.d9cbbf45.png",
-    "static/media/style.css": "/static/media/onlyyou.09af7b09.otf",
-    "static/media/profile2.179ad827.JPG": "/static/media/profile2.179ad827.JPG",
-    "static/media/seek.b5648f4c.JPG": "/static/media/seek.b5648f4c.JPG"
+    "main.css": "/lightdp/static/css/main.19411bd6.chunk.css",
+    "main.js": "/lightdp/static/js/main.d49962fa.chunk.js",
+    "main.js.map": "/lightdp/static/js/main.d49962fa.chunk.js.map",
+    "runtime-main.js": "/lightdp/static/js/runtime-main.a74bdc89.js",
+    "runtime-main.js.map": "/lightdp/static/js/runtime-main.a74bdc89.js.map",
+    "static/js/2.ce89fb94.chunk.js": "/lightdp/static/js/2.ce89fb94.chunk.js",
+    "static/js/2.ce89fb94.chunk.js.map": "/lightdp/static/js/2.ce89fb94.chunk.js.map",
+    "index.html": "/lightdp/index.html",
+    "static/css/main.19411bd6.chunk.css.map": "/lightdp/static/css/main.19411bd6.chunk.css.map",
+    "static/js/2.ce89fb94.chunk.js.LICENSE.txt": "/lightdp/static/js/2.ce89fb94.chunk.js.LICENSE.txt",
+    "static/media/flash.a3f146a6.png": "/lightdp/static/media/flash.a3f146a6.png",
+    "static/media/light.d9cbbf45.png": "/lightdp/static/media/light.d9cbbf45.png",
+    "static/media/style.css": "/lightdp/static/media/onlyyou.09af7b09.otf",
+    "static/media/profile2.179ad827.JPG": "/lightdp/static/media/profile2.179ad827.JPG",
+    "static/media/seek.b5648f4c.JPG": "/lightdp/static/media/seek.b5648f4c.JPG"
   },
   "entrypoints": [
-    "static/js/runtime-main.06e07f2a.js",
+    "static/js/runtime-main.a74bdc89.js",
     "static/js/2.ce89fb94.chunk.js",
-    "static/css/main.3edb5635.chunk.css",
+    "static/css/main.19411bd6.chunk.css",
     "static/js/main.d49962fa.chunk.js"
   ]
 }
