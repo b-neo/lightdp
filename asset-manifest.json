@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3edb5635.chunk.css",
+    "main.js": "/static/js/main.d49962fa.chunk.js",
+    "main.js.map": "/static/js/main.d49962fa.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.06e07f2a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.06e07f2a.js.map",
+    "static/js/2.ce89fb94.chunk.js": "/static/js/2.ce89fb94.chunk.js",
+    "static/js/2.ce89fb94.chunk.js.map": "/static/js/2.ce89fb94.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.3edb5635.chunk.css.map": "/static/css/main.3edb5635.chunk.css.map",
+    "static/js/2.ce89fb94.chunk.js.LICENSE.txt": "/static/js/2.ce89fb94.chunk.js.LICENSE.txt",
+    "static/media/flash.a3f146a6.png": "/static/media/flash.a3f146a6.png",
+    "static/media/light.d9cbbf45.png": "/static/media/light.d9cbbf45.png",
+    "static/media/style.css": "/static/media/onlyyou.09af7b09.otf",
+    "static/media/profile2.179ad827.JPG": "/static/media/profile2.179ad827.JPG",
+    "static/media/seek.b5648f4c.JPG": "/static/media/seek.b5648f4c.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.06e07f2a.js",
+    "static/js/2.ce89fb94.chunk.js",
+    "static/css/main.3edb5635.chunk.css",
+    "static/js/main.d49962fa.chunk.js"
+  ]
+}
