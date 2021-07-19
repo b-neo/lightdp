@@ -5,6 +5,7 @@ import FlashImg from "../image/flash.png";
 class Greeting extends React.Component {
     componentDidMount() {
         ifShowPage();
+        document.querySelector("body").classList.remove("blackBg");
         const { history } = this.props;
         function lampTouched() {
             document.querySelector(".greeting").classList.add("bye");
@@ -19,9 +20,9 @@ class Greeting extends React.Component {
                 flash.addEventListener("click", () => {
                     setTimeout(() => {
                         history.push("/show");
-                    }, 200);
+                    }, 100);
                 });
-            }, 1500);
+            }, 1800);
         }
         const lamp = document.querySelector(".lightimg");
         lamp.addEventListener("click", lampTouched);

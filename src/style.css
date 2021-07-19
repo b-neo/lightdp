@@ -62,7 +62,7 @@ section {
 }
 .bye {
     animation-name: lightOut;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 .fadeOut {
     animation-name: fadeOut;

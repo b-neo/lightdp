@@ -1,5 +1,4 @@
 import React from "react";
-import ProfileImg from "../image/profile2.JPG";
 import { Link } from "react-router-dom";
 
 class Artist extends React.Component {
@@ -10,11 +9,7 @@ class Artist extends React.Component {
         return (
             <section className="screen">
                 <Link to="/show">
-                    <img
-                        src={ProfileImg}
-                        className="profileImg"
-                        alt="Artist"
-                    ></img>
+                    <img src="none" className="profileImg" alt="Artist"></img>
                 </Link>
             </section>
         );

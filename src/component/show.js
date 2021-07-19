@@ -12,27 +12,36 @@ class Show extends React.Component {
         currentImg: 1,
     };
     componentDidMount() {
-        ifShowPage();
-        setInterval(() => {
-            let imgNum = Math.floor(Math.random() * 7) + 1;
-            const imgElems = document.querySelectorAll(".showImg");
-            let prevImg = imgElems[this.state.currentImg - 1]; // Previous Img
-            prevImg.classList.add("fadeOut");
-            setTimeout(() => {
-                prevImg.classList.remove("fadeOut");
-                prevImg.classList.add("hidden");
-                let newImg = imgElems[imgNum - 1]; // New Image
-                newImg.classList.add("fadeIn");
+        if (ifShowPage()) {
+            document.querySelector("body").classList.add("flashlight");
+            document.body.style.setProperty("--lightSize", "5rem");
+
+            this.updatePainting = setInterval(() => {
+                let imgNum = Math.floor(Math.random() * 7) + 1;
+                let imgElems = document.querySelectorAll(".showImg");
+                let prevImg = imgElems[this.state.currentImg - 1]; // Previous Img
+                prevImg.classList.add("fadeOut");
                 setTimeout(() => {
-                    newImg.classList.remove("hidden");
+                    prevImg.classList.remove("fadeOut");
+                    prevImg.classList.add("hidden");
+                    let newImg = imgElems[imgNum - 1]; // New Image
+                    newImg.classList.add("fadeIn");
                     setTimeout(() => {
-                        newImg.classList.remove("fadeIn");
-                        let currentImg = imgNum;
-                        this.setState({ currentImg });
-                    }, 1000);
-                }, 50);
-            }, 990);
-        }, 5000);
+                        newImg.classList.remove("hidden");
+                        setTimeout(() => {
+                            newImg.classList.remove("fadeIn");
+                            let currentImg = imgNum;
+                            this.setState({ currentImg });
+                        }, 1000);
+                    }, 50);
+                }, 990);
+            }, 5000);
+        } else {
+            document.querySelector("body").classList.remove("flashlight");
+        }
+    }
+    componentWillUnmount() {
+        clearInterval(this.updatePainting);
     }
     render() {
         return (
@@ -51,9 +60,9 @@ class Show extends React.Component {
 function ifShowPage() {
     let checker = document.getElementsByClassName("show");
     if (checker.length > 0) {
-        document.querySelector("body").classList.add("flashlight");
+        return true;
     } else {
-        document.querySelector("body").classList.remove("flashlight");
+        return false;
     }
 }
 function trackMouse(e) {
