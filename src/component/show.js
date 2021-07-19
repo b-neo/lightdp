@@ -1,14 +1,49 @@
 import React from "react";
-import ProfileImg from "../image/seek.JPG";
+import img1 from "../image/1.JPG";
+import img2 from "../image/2.jpg";
+import img3 from "../image/3.jpg";
+import img4 from "../image/4.JPG";
+import img5 from "../image/5.JPG";
+import img6 from "../image/6.jpg";
+import img7 from "../image/7.JPG";
 
 class Show extends React.Component {
+    state = {
+        currentImg: 1,
+    };
     componentDidMount() {
         ifShowPage();
+        setInterval(() => {
+            let imgNum = Math.floor(Math.random() * 7) + 1;
+            const imgElems = document.querySelectorAll(".showImg");
+            let prevImg = imgElems[this.state.currentImg - 1]; // Previous Img
+            prevImg.classList.add("fadeOut");
+            setTimeout(() => {
+                prevImg.classList.remove("fadeOut");
+                prevImg.classList.add("hidden");
+                let newImg = imgElems[imgNum - 1]; // New Image
+                newImg.classList.add("fadeIn");
+                setTimeout(() => {
+                    newImg.classList.remove("hidden");
+                    setTimeout(() => {
+                        newImg.classList.remove("fadeIn");
+                        let currentImg = imgNum;
+                        this.setState({ currentImg });
+                    }, 1000);
+                }, 50);
+            }, 990);
+        }, 5000);
     }
     render() {
         return (
             <section className="show">
-                <img src={ProfileImg} className="showImg" alt="painting"></img>
+                <img src={img1} className="showImg" alt="painting"></img>
+                <img src={img2} className="showImg hidden" alt="painting"></img>
+                <img src={img3} className="showImg hidden" alt="painting"></img>
+                <img src={img4} className="showImg hidden" alt="painting"></img>
+                <img src={img5} className="showImg hidden" alt="painting"></img>
+                <img src={img6} className="showImg hidden" alt="painting"></img>
+                <img src={img7} className="showImg hidden" alt="painting"></img>
             </section>
         );
     }
@@ -58,7 +93,7 @@ function pressOff() {
         .getPropertyValue("--lightSize")
         .split("rem")[0];
     let lightDown = setInterval(() => {
-        if (size > 6 && pressingMode === false) {
+        if (size > 5 && pressingMode === false) {
             size--;
             document.body.style.setProperty("--lightSize", `${size}rem`);
         } else {

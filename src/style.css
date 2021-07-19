@@ -1,6 +1,7 @@
 @import "reset.css";
 html,
 body {
+    background-color: rgba(0, 0, 0, 0.95);
     overscroll-behavior-y: contain;
 }
 html,
@@ -19,7 +20,7 @@ section {
 .flashlight {
     --cursorX: 50vw;
     --cursorY: 50vh;
-    --lightSize: 6rem;
+    --lightSize: 5rem;
 }
 .flashlight::before {
     content: "";
@@ -59,6 +60,31 @@ section {
 .bye {
     animation-name: lightOut;
     animation-duration: 3s;
+}
+.fadeOut {
+    animation-name: fadeOut;
+    animation-duration: 1s;
+}
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+@keyframes fadeIn {
+    0% {
+        filter: brightness(0%);
+    }
+    100% {
+        filter: brightness(100%);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        filter: brightness(100%);
+    }
+    100% {
+        filter: brightness(0%);
+    }
 }
 @keyframes lightIn {
     0% {
