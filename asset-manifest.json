@@ -1,25 +1,31 @@
 {
   "files": {
-    "main.css": "/lightdp/static/css/main.8d7f2a4d.chunk.css",
-    "main.js": "/lightdp/static/js/main.f0b9c74c.chunk.js",
-    "main.js.map": "/lightdp/static/js/main.f0b9c74c.chunk.js.map",
+    "main.css": "/lightdp/static/css/main.bba12097.chunk.css",
+    "main.js": "/lightdp/static/js/main.cd39ac39.chunk.js",
+    "main.js.map": "/lightdp/static/js/main.cd39ac39.chunk.js.map",
     "runtime-main.js": "/lightdp/static/js/runtime-main.a74bdc89.js",
     "runtime-main.js.map": "/lightdp/static/js/runtime-main.a74bdc89.js.map",
     "static/js/2.b214de01.chunk.js": "/lightdp/static/js/2.b214de01.chunk.js",
     "static/js/2.b214de01.chunk.js.map": "/lightdp/static/js/2.b214de01.chunk.js.map",
     "index.html": "/lightdp/index.html",
-    "static/css/main.8d7f2a4d.chunk.css.map": "/lightdp/static/css/main.8d7f2a4d.chunk.css.map",
+    "static/css/main.bba12097.chunk.css.map": "/lightdp/static/css/main.bba12097.chunk.css.map",
     "static/js/2.b214de01.chunk.js.LICENSE.txt": "/lightdp/static/js/2.b214de01.chunk.js.LICENSE.txt",
+    "static/media/1.fdc0d77c.JPG": "/lightdp/static/media/1.fdc0d77c.JPG",
+    "static/media/2.83f83393.jpg": "/lightdp/static/media/2.83f83393.jpg",
+    "static/media/3.1c791fec.jpg": "/lightdp/static/media/3.1c791fec.jpg",
+    "static/media/4.da1c2211.JPG": "/lightdp/static/media/4.da1c2211.JPG",
+    "static/media/5.0f47b219.JPG": "/lightdp/static/media/5.0f47b219.JPG",
+    "static/media/6.fe4e8493.jpg": "/lightdp/static/media/6.fe4e8493.jpg",
+    "static/media/7.64966631.JPG": "/lightdp/static/media/7.64966631.JPG",
     "static/media/flash.a3f146a6.png": "/lightdp/static/media/flash.a3f146a6.png",
     "static/media/light.d9cbbf45.png": "/lightdp/static/media/light.d9cbbf45.png",
     "static/media/style.css": "/lightdp/static/media/onlyyou.09af7b09.otf",
-    "static/media/profile2.179ad827.JPG": "/lightdp/static/media/profile2.179ad827.JPG",
-    "static/media/seek.93edbcf1.JPG": "/lightdp/static/media/seek.93edbcf1.JPG"
+    "static/media/profile2.179ad827.JPG": "/lightdp/static/media/profile2.179ad827.JPG"
   },
   "entrypoints": [
     "static/js/runtime-main.a74bdc89.js",
     "static/js/2.b214de01.chunk.js",
-    "static/css/main.8d7f2a4d.chunk.css",
-    "static/js/main.f0b9c74c.chunk.js"
+    "static/css/main.bba12097.chunk.css",
+    "static/js/main.cd39ac39.chunk.js"
   ]
 }
