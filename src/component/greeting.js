@@ -19,9 +19,9 @@ class Greeting extends React.Component {
                 flash.addEventListener("click", () => {
                     setTimeout(() => {
                         history.push("/show");
-                    }, 1000);
+                    }, 200);
                 });
-            }, 2800);
+            }, 1500);
         }
         const lamp = document.querySelector(".lightimg");
         lamp.addEventListener("click", lampTouched);
