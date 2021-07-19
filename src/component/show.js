@@ -30,7 +30,63 @@ function touchMove(e) {
     document.body.style.setProperty("--cursorX", `${pos.clientX}px`);
     document.body.style.setProperty("--cursorY", `${pos.clientY}px`);
 }
-document.addEventListener("mousemove", trackMouse);
-document.addEventListener("touchmove", touchMove);
+let pressingMode = false;
+function pressOn(e) {
+    pressingMode = true;
+    let size = parseInt(
+        getComputedStyle(document.body)
+            .getPropertyValue("--lightSize")
+            .split("rem")[0]
+    );
+
+    let lightUp = setInterval(() => {
+        if (pressingMode) {
+            size++;
+            document.body.style.setProperty(
+                "--lightSize",
+                `${String(size)}rem`
+            );
+        } else {
+            clearInterval(lightUp);
+        }
+    }, 80);
+}
+
+function pressOff() {
+    pressingMode = false;
+    let size = getComputedStyle(document.body)
+        .getPropertyValue("--lightSize")
+        .split("rem")[0];
+    let lightDown = setInterval(() => {
+        if (size > 6 && pressingMode === false) {
+            size--;
+            document.body.style.setProperty("--lightSize", `${size}rem`);
+        } else {
+            clearInterval(lightDown);
+        }
+    }, 30);
+}
+function isMobile() {
+    var UserAgent = navigator.userAgent;
+    if (
+        UserAgent.match(
+            /iPhone|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i
+        ) != null ||
+        UserAgent.match(/LG|SAMSUNG|Samsung/) != null
+    ) {
+        return true;
+    } else {
+        return false;
+    }
+}
+if (isMobile()) {
+    document.addEventListener("touchstart", pressOn);
+    document.addEventListener("touchend", pressOff);
+    document.addEventListener("touchmove", touchMove);
+} else {
+    document.addEventListener("mousedown", pressOn);
+    document.addEventListener("mouseup", pressOff);
+    document.addEventListener("mousemove", trackMouse);
+}
 
 export default Show;
