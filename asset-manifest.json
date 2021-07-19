@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/lightdp/static/css/main.9bd79858.chunk.css",
-    "main.js": "/lightdp/static/js/main.77a8a24b.chunk.js",
-    "main.js.map": "/lightdp/static/js/main.77a8a24b.chunk.js.map",
+    "main.js": "/lightdp/static/js/main.82c6eb26.chunk.js",
+    "main.js.map": "/lightdp/static/js/main.82c6eb26.chunk.js.map",
     "runtime-main.js": "/lightdp/static/js/runtime-main.a74bdc89.js",
     "runtime-main.js.map": "/lightdp/static/js/runtime-main.a74bdc89.js.map",
     "static/js/2.b214de01.chunk.js": "/lightdp/static/js/2.b214de01.chunk.js",
@@ -14,12 +14,12 @@
     "static/media/light.d9cbbf45.png": "/lightdp/static/media/light.d9cbbf45.png",
     "static/media/style.css": "/lightdp/static/media/onlyyou.09af7b09.otf",
     "static/media/profile2.179ad827.JPG": "/lightdp/static/media/profile2.179ad827.JPG",
-    "static/media/seek.b5648f4c.JPG": "/lightdp/static/media/seek.b5648f4c.JPG"
+    "static/media/seek.93edbcf1.JPG": "/lightdp/static/media/seek.93edbcf1.JPG"
   },
   "entrypoints": [
     "static/js/runtime-main.a74bdc89.js",
     "static/js/2.b214de01.chunk.js",
     "static/css/main.9bd79858.chunk.css",
-    "static/js/main.77a8a24b.chunk.js"
+    "static/js/main.82c6eb26.chunk.js"
   ]
 }
