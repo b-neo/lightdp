@@ -41,7 +41,7 @@ section {
     transition: 1s;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1365px) {
     html,
     body,
     section {
