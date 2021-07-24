@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/lightdp/static/css/main.af9e8de8.chunk.css",
-    "main.js": "/lightdp/static/js/main.aa092872.chunk.js",
-    "main.js.map": "/lightdp/static/js/main.aa092872.chunk.js.map",
+    "main.js": "/lightdp/static/js/main.78d371c6.chunk.js",
+    "main.js.map": "/lightdp/static/js/main.78d371c6.chunk.js.map",
     "runtime-main.js": "/lightdp/static/js/runtime-main.a74bdc89.js",
     "runtime-main.js.map": "/lightdp/static/js/runtime-main.a74bdc89.js.map",
     "static/js/2.82356d1a.chunk.js": "/lightdp/static/js/2.82356d1a.chunk.js",
@@ -54,6 +54,6 @@
     "static/js/runtime-main.a74bdc89.js",
     "static/js/2.82356d1a.chunk.js",
     "static/css/main.af9e8de8.chunk.css",
-    "static/js/main.aa092872.chunk.js"
+    "static/js/main.78d371c6.chunk.js"
   ]
 }
