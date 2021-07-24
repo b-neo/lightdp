@@ -1,39 +1,38 @@
 import React from "react";
-import LightImg from "../image/light.png";
-import FlashImg from "../image/flash.png";
+import TorchFire from "../image/torch2.png";
+import Torch from "../image/torch1.png";
 
 class Greeting extends React.Component {
     componentDidMount() {
         ifShowPage();
-        document.querySelector("body").classList.remove("blackBg");
         const { history } = this.props;
-        function lampTouched() {
-            document.querySelector(".greeting").classList.add("bye");
+        document.querySelector(".greeting").classList.add("blackBg");
+        document.querySelector(".greeting").classList.add("dim");
+        function torchTouched() {
+            torchOff.classList.add("fadeOut");
             setTimeout(() => {
-                lamp.classList.add("hidden");
-                const flash = document.querySelector(".flashImg");
-                flash.classList.remove("hidden");
-                const greetingMessage =
-                    document.querySelector(".greetingMessage");
-                greetingMessage.classList.remove("hidden");
-                document.querySelector("body").classList.add("blackBg");
-                flash.addEventListener("click", () => {
-                    setTimeout(() => {
+                torchOff.classList.add("hidden");
+                document.querySelector(".greeting").classList.remove("dim");
+                const torchOn = document.querySelector(".torchOn");
+                torchOn.classList.add("fadeIn");
+                setTimeout(() => {
+                    torchOn.classList.remove("hidden");
+                    torchOn.addEventListener("click", () => {
                         history.push("/show");
-                    }, 100);
-                });
-            }, 1800);
+                    });
+                }, 50);
+            }, 200);
         }
-        const lamp = document.querySelector(".lightimg");
-        lamp.addEventListener("click", lampTouched);
+        const torchOff = document.querySelector(".torchOff");
+        torchOff.addEventListener("click", torchTouched);
     }
     render() {
         return (
             <section className="greeting">
-                <img src={LightImg} className="lightimg" alt="Lightbulb"></img>
+                <img src={Torch} className="torchOff" alt="Lightbulb"></img>
                 <img
-                    src={FlashImg}
-                    className="flashImg hidden"
+                    src={TorchFire}
+                    className="torchOn hidden"
                     alt="Flashlight"
                 ></img>
 
