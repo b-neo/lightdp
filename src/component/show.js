@@ -53,16 +53,21 @@ class Show extends React.Component {
                 let imgElems = document.querySelectorAll(".showImg");
                 let prevImg = imgElems[this.state.currentImg - 1]; // Previous Img
                 prevImg.classList.add("fadeOut");
+
                 setTimeout(() => {
-                    document.body.style.setProperty("--lightSize", `250rem`);
                     prevImg.classList.remove("fadeOut");
                     prevImg.classList.add("hidden");
-                    pressOff();
+
                     let newImg = imgElems[imgNum - 1]; // New Image
                     newImg.classList.add("fadeIn");
                     setTimeout(() => {
                         newImg.classList.remove("hidden");
+                        document.body.style.setProperty(
+                            "--lightSize",
+                            `200rem`
+                        );
                         setTimeout(() => {
+                            pressOff();
                             newImg.classList.remove("fadeIn");
 
                             let currentImg = imgNum;
@@ -70,7 +75,7 @@ class Show extends React.Component {
                         }, 1000);
                     }, 50);
                 }, 990);
-            }, 15000);
+            }, 18000);
         } else {
             document.querySelector("body").classList.remove("flashlight");
         }
@@ -79,7 +84,6 @@ class Show extends React.Component {
         clearInterval(this.updatePainting);
     }
     render() {
-        document.body.style.setProperty("--lightSize", `250rem`);
         return (
             <section className="show">
                 <img src={img1} className="showImg" alt="painting"></img>
