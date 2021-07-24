@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lightdp/static/css/main.af9e8de8.chunk.css",
+    "main.css": "/lightdp/static/css/main.caa09c97.chunk.css",
     "main.js": "/lightdp/static/js/main.78d371c6.chunk.js",
     "main.js.map": "/lightdp/static/js/main.78d371c6.chunk.js.map",
     "runtime-main.js": "/lightdp/static/js/runtime-main.a74bdc89.js",
@@ -8,7 +8,7 @@
     "static/js/2.82356d1a.chunk.js": "/lightdp/static/js/2.82356d1a.chunk.js",
     "static/js/2.82356d1a.chunk.js.map": "/lightdp/static/js/2.82356d1a.chunk.js.map",
     "index.html": "/lightdp/index.html",
-    "static/css/main.af9e8de8.chunk.css.map": "/lightdp/static/css/main.af9e8de8.chunk.css.map",
+    "static/css/main.caa09c97.chunk.css.map": "/lightdp/static/css/main.caa09c97.chunk.css.map",
     "static/js/2.82356d1a.chunk.js.LICENSE.txt": "/lightdp/static/js/2.82356d1a.chunk.js.LICENSE.txt",
     "static/media/1.2b8b342a.jpg": "/lightdp/static/media/1.2b8b342a.jpg",
     "static/media/10.2d9b6fad.jpg": "/lightdp/static/media/10.2d9b6fad.jpg",
@@ -53,7 +53,7 @@
   "entrypoints": [
     "static/js/runtime-main.a74bdc89.js",
     "static/js/2.82356d1a.chunk.js",
-    "static/css/main.af9e8de8.chunk.css",
+    "static/css/main.caa09c97.chunk.css",
     "static/js/main.78d371c6.chunk.js"
   ]
 }
