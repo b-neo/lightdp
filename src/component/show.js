@@ -35,9 +35,6 @@ import img33 from "../image/33.jpg";
 import img34 from "../image/34.jpg";
 import img35 from "../image/35.jpg";
 import img36 from "../image/36.jpg";
-import img37 from "../image/37.jpg";
-import img38 from "../image/38.jpg";
-import img39 from "../image/39.jpg";
 
 class Show extends React.Component {
     state = {
@@ -46,37 +43,40 @@ class Show extends React.Component {
     componentDidMount() {
         if (ifShowPage()) {
             document.querySelector("body").classList.add("flashlight");
-            document.body.style.setProperty("--lightSize", `200rem`);
-            pressOff();
+            document.body.style.setProperty("--lightSize", `150rem`);
             this.updatePainting = setInterval(() => {
-                pressOff();
-                let imgNum = Math.floor(Math.random() * 39) + 1;
+                let imgNum = this.state.currentImg;
+                let newimgNum = imgNum + 1;
+                if (newimgNum > 36) {
+                    newimgNum = 1;
+                }
                 let imgElems = document.querySelectorAll(".showImg");
-                let prevImg = imgElems[this.state.currentImg - 1]; // Previous Img
+                let prevImg = imgElems[imgNum - 1]; // Previous Img
                 prevImg.classList.add("fadeOut");
 
                 setTimeout(() => {
                     prevImg.classList.remove("fadeOut");
                     prevImg.classList.add("hidden");
 
-                    let newImg = imgElems[imgNum - 1]; // New Image
+                    let newImg = imgElems[newimgNum - 1]; // New Image
                     newImg.classList.add("fadeIn");
                     setTimeout(() => {
                         newImg.classList.remove("hidden");
+                        document.body.style.setProperty("--lightSize", `5rem`);
                         document.body.style.setProperty(
                             "--lightSize",
-                            `200rem`
+                            `150rem`
                         );
                         setTimeout(() => {
                             pressOff();
                             newImg.classList.remove("fadeIn");
 
-                            let currentImg = imgNum;
+                            let currentImg = newimgNum;
                             this.setState({ currentImg });
                         }, 1000);
                     }, 50);
                 }, 990);
-            }, 18000);
+            }, 10000);
         } else {
             document.querySelector("body").classList.remove("flashlight");
         }
@@ -228,21 +228,6 @@ class Show extends React.Component {
                 ></img>
                 <img
                     src={img36}
-                    className="showImg hidden"
-                    alt="painting"
-                ></img>
-                <img
-                    src={img37}
-                    className="showImg hidden"
-                    alt="painting"
-                ></img>
-                <img
-                    src={img38}
-                    className="showImg hidden"
-                    alt="painting"
-                ></img>
-                <img
-                    src={img39}
                     className="showImg hidden"
                     alt="painting"
                 ></img>

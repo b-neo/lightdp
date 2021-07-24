@@ -15,8 +15,6 @@ class Home extends React.Component {
                         className="introImg fadeIn"
                         alt="poster"
                     ></img>
-                    <div className="margin1"></div>
-                    <div className="large bold fadeIn">불을 찾아서 Display</div>
                 </Link>
             </section>
         );

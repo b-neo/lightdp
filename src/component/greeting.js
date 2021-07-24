@@ -1,44 +1,39 @@
 import React from "react";
-import TorchFire from "../image/torch2.png";
-import Torch from "../image/torch1.png";
+import fireImage from "../video/fire.png";
+import fireVideo from "../video/fire.mp4";
 
 class Greeting extends React.Component {
     componentDidMount() {
         ifShowPage();
         const { history } = this.props;
         document.querySelector(".greeting").classList.add("blackBg");
-        document.querySelector(".greeting").classList.add("dim");
-        function torchTouched() {
-            torchOff.classList.add("fadeOut");
-            setTimeout(() => {
-                torchOff.classList.add("hidden");
-                document.querySelector(".greeting").classList.remove("dim");
-                const torchOn = document.querySelector(".torchOn");
-                torchOn.classList.add("fadeIn");
-                setTimeout(() => {
-                    torchOn.classList.remove("hidden");
-                    torchOn.addEventListener("click", () => {
-                        history.push("/show");
-                    });
-                }, 50);
-            }, 200);
-        }
+        const torchOn = document.querySelector(".torchOn");
+        torchOn.addEventListener("click", () => {
+            history.push("/show");
+        });
         const torchOff = document.querySelector(".torchOff");
-        torchOff.addEventListener("click", torchTouched);
+        torchOff.addEventListener("click", () => {
+            torchOn.classList.add("fadeIn");
+            torchOn.play();
+            torchOff.classList.add("hidden");
+
+            setTimeout(() => {
+                torchOn.classList.remove("hidden");
+            }, 10);
+        });
     }
     render() {
         return (
             <section className="greeting">
-                <img src={Torch} className="torchOff" alt="Lightbulb"></img>
                 <img
-                    src={TorchFire}
-                    className="torchOn hidden"
+                    src={fireImage}
+                    className="torchOff"
                     alt="Flashlight"
                 ></img>
 
-                <div className="greetingMessage hidden">
-                    김형기 Online DP - 불을 찾아서
-                </div>
+                <video loop className="torchOn hidden">
+                    <source src={fireVideo} type="video/mp4"></source>
+                </video>
             </section>
         );
     }
@@ -51,4 +46,5 @@ function ifShowPage() {
         document.querySelector("body").classList.remove("flashlight");
     }
 }
+
 export default Greeting;
