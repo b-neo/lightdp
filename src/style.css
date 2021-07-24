@@ -21,7 +21,7 @@ section {
     overflow-y: hidden;
 }
 .home img {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
     object-fit: cover;
