@@ -46,6 +46,7 @@ class Show extends React.Component {
     componentDidMount() {
         if (ifShowPage()) {
             document.querySelector("body").classList.add("flashlight");
+            document.body.style.setProperty("--lightSize", `200rem`);
             pressOff();
             this.updatePainting = setInterval(() => {
                 pressOff();
