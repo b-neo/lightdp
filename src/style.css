@@ -20,12 +20,18 @@ section {
     position: static;
     overflow-y: hidden;
 }
+.home {
+    background: linear-gradient(
+        90deg,
+        rgba(25, 36, 139, 1),
+        rgba(228, 2, 18, 0.8) 130.71%
+    );
+}
 .home img {
-    position: fixed;
-    left: -110%;
-    height: 70%;
+    width: 100vw;
+    height: 100vh;
     box-sizing: border-box;
-    object-fit: fill;
+    object-fit: contain;
 }
 .torchOff {
     margin: auto;
@@ -50,13 +56,7 @@ section {
         height: 100%;
         position: static;
     }
-    .home img {
-        position: static;
-        height: 100%;
-        left: 0%;
-        box-sizing: border-box;
-        object-fit: cover;
-    }
+
     .torchOff {
         margin: auto;
         width: 40vw;

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import IntroImg from "../image/intro.jpg";
+//import IntroImg from "../image/intro.jpg";
+import IntroM from "../image/introM.jpg";
 
 class Home extends React.Component {
     componentDidMount() {
@@ -11,7 +12,7 @@ class Home extends React.Component {
             <section className="home">
                 <Link to="/greeting">
                     <img
-                        src={IntroImg}
+                        src={IntroM}
                         className="introImg fadeIn"
                         alt="poster"
                     ></img>
