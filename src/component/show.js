@@ -269,6 +269,9 @@ function touchMove(e) {
 }
 let pressingMode = false;
 function pressOn(e) {
+    if (isMobile()) {
+        touchMove(e);
+    }
     pressingMode = true;
     let size = parseInt(
         getComputedStyle(document.body)
