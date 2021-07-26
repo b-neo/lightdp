@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/lightdp/static/css/main.caa09c97.chunk.css",
-    "main.js": "/lightdp/static/js/main.78d371c6.chunk.js",
-    "main.js.map": "/lightdp/static/js/main.78d371c6.chunk.js.map",
+    "main.css": "/lightdp/static/css/main.6d2e453a.chunk.css",
+    "main.js": "/lightdp/static/js/main.604e1939.chunk.js",
+    "main.js.map": "/lightdp/static/js/main.604e1939.chunk.js.map",
     "runtime-main.js": "/lightdp/static/js/runtime-main.a74bdc89.js",
     "runtime-main.js.map": "/lightdp/static/js/runtime-main.a74bdc89.js.map",
-    "static/js/2.82356d1a.chunk.js": "/lightdp/static/js/2.82356d1a.chunk.js",
-    "static/js/2.82356d1a.chunk.js.map": "/lightdp/static/js/2.82356d1a.chunk.js.map",
+    "static/js/2.812d40bf.chunk.js": "/lightdp/static/js/2.812d40bf.chunk.js",
+    "static/js/2.812d40bf.chunk.js.map": "/lightdp/static/js/2.812d40bf.chunk.js.map",
     "index.html": "/lightdp/index.html",
-    "static/css/main.caa09c97.chunk.css.map": "/lightdp/static/css/main.caa09c97.chunk.css.map",
-    "static/js/2.82356d1a.chunk.js.LICENSE.txt": "/lightdp/static/js/2.82356d1a.chunk.js.LICENSE.txt",
+    "static/css/main.6d2e453a.chunk.css.map": "/lightdp/static/css/main.6d2e453a.chunk.css.map",
+    "static/js/2.812d40bf.chunk.js.LICENSE.txt": "/lightdp/static/js/2.812d40bf.chunk.js.LICENSE.txt",
     "static/media/1.2b8b342a.jpg": "/lightdp/static/media/1.2b8b342a.jpg",
     "static/media/10.2d9b6fad.jpg": "/lightdp/static/media/10.2d9b6fad.jpg",
     "static/media/11.fdad9e29.jpg": "/lightdp/static/media/11.fdad9e29.jpg",
@@ -48,12 +48,13 @@
     "static/media/9.487dc267.jpg": "/lightdp/static/media/9.487dc267.jpg",
     "static/media/fire.3846d558.png": "/lightdp/static/media/fire.3846d558.png",
     "static/media/fire.771166a1.mp4": "/lightdp/static/media/fire.771166a1.mp4",
-    "static/media/introM.16ac8497.jpg": "/lightdp/static/media/introM.16ac8497.jpg"
+    "static/media/introM.16ac8497.jpg": "/lightdp/static/media/introM.16ac8497.jpg",
+    "static/media/type.9b2fba1b.mp3": "/lightdp/static/media/type.9b2fba1b.mp3"
   },
   "entrypoints": [
     "static/js/runtime-main.a74bdc89.js",
-    "static/js/2.82356d1a.chunk.js",
-    "static/css/main.caa09c97.chunk.css",
-    "static/js/main.78d371c6.chunk.js"
+    "static/js/2.812d40bf.chunk.js",
+    "static/css/main.6d2e453a.chunk.css",
+    "static/js/main.604e1939.chunk.js"
   ]
 }
