@@ -1,16 +1,18 @@
 import React from "react";
 import fireImage from "../video/fire.png";
 import fireVideo from "../video/fire.mp4";
+import typeMp3 from "../video/type.mp3";
+import Typewriter from "typewriter-effect";
 
 class Greeting extends React.Component {
+    state = {
+        typer: 0,
+    };
     componentDidMount() {
         ifShowPage();
         const { history } = this.props;
         document.querySelector(".greeting").classList.add("blackBg");
         const torchOn = document.querySelector(".torchOn");
-        torchOn.addEventListener("click", () => {
-            history.push("/show");
-        });
         const torchOff = document.querySelector(".torchOff");
         torchOff.addEventListener("click", () => {
             torchOn.classList.add("fadeIn");
@@ -19,6 +21,10 @@ class Greeting extends React.Component {
 
             setTimeout(() => {
                 torchOn.classList.remove("hidden");
+                this.setState({ typer: 1 });
+                setTimeout(() => {
+                    history.push("/show");
+                }, 9000);
             }, 10);
         });
     }
@@ -30,7 +36,24 @@ class Greeting extends React.Component {
                     className="torchOff"
                     alt="Flashlight"
                 ></img>
-
+                {this.state.typer === 1 ? (
+                    <div className="typer">
+                        <Typewriter
+                            options={{
+                                strings:
+                                    "길을 내는 용기, 횃불을 들고 찾는 프로메테우스의 용기<br/> - 표출욕망에너지",
+                                autoStart: true,
+                                loop: false,
+                                delay: 80,
+                            }}
+                        />
+                        <audio autoPlay preload="auto">
+                            <source src={typeMp3} type="audio/mp3"></source>
+                        </audio>
+                    </div>
+                ) : (
+                    ""
+                )}
                 <video loop className="torchOn hidden">
                     <source src={fireVideo} type="video/mp4"></source>
                 </video>
